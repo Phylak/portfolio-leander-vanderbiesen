@@ -3,7 +3,7 @@
 import Button from '@/components/ui/Button';
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import MobileMenu from '@/components/ui/MobileMenu';
+import MobileMenu from '@/components/MobileMenu';
 import { downloadResume } from '@/lib/utils';
 
 export const navLinks = [

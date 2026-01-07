@@ -1,5 +1,5 @@
 import SectionHeading from '@/components/ui/SectionHeading';
-import InfoCard, { InfoCardProps } from '../ui/InfoCard';
+import InfoCard, { InfoCardProps } from '../InfoCard';
 
 // TODO adjust copy
 const InfoCards: InfoCardProps[] = [

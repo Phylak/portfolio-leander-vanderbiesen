@@ -1,6 +1,7 @@
 import React from 'react';
 import { cva } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
+import { Slot } from '@radix-ui/react-slot';
 
 const buttonVariants = cva(
   'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 cursor-pointer',
@@ -42,16 +43,20 @@ type ButtonProps = {
     | 'hero'
     | 'glass';
   size: 'default' | 'sm' | 'lg' | 'xl' | 'icon';
+  asChild?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button: React.FC<ButtonProps> = ({
   variant,
   size,
+  asChild,
   className,
   ...props
 }) => {
+  const Element = asChild ? Slot : 'button';
+
   return (
-    <button
+    <Element
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     />

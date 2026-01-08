@@ -33,7 +33,7 @@ const featuredProjects = [
   },
 ];
 
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
     <section id="projects" className="section-padding">
       <div className="container-narrow">

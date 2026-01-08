@@ -6,7 +6,7 @@ interface MobileMenuProps {
   onClose: () => void;
 }
 
-const MobileMenu = ({ onClose }: MobileMenuProps) => {
+const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
   return (
     <nav className="absolute top-16 z-50 md:hidden mx-6 mt-4 p-6 glass animate-fade-up rounded-xl w-4/5">
       <div className="flex flex-col gap-4">

@@ -44,7 +44,12 @@ type ButtonProps = {
   size: 'default' | 'sm' | 'lg' | 'xl' | 'icon';
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button = ({ variant, size, className, ...props }: ButtonProps) => {
+const Button: React.FC<ButtonProps> = ({
+  variant,
+  size,
+  className,
+  ...props
+}) => {
   return (
     <button
       className={cn(buttonVariants({ variant, size, className }))}

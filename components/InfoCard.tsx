@@ -6,7 +6,11 @@ export interface InfoCardProps {
   iconName: keyof typeof dynamicIconImports;
 }
 
-const InfoCard = ({ title, description, iconName }: InfoCardProps) => {
+const InfoCard: React.FC<InfoCardProps> = ({
+  title,
+  description,
+  iconName,
+}) => {
   return (
     <div className="glass glass-hover rounded-xl p-6 group flex mb-4 lg:mb-3">
       <div className="flex items-start gap-4">

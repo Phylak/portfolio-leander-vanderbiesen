@@ -22,7 +22,7 @@ const InfoCards: InfoCardProps[] = [
   },
 ];
 
-export default function About() {
+const About: React.FC = () =>  {
   return (
     <section className="section-padding" id="about">
       <div className="container-narrow">
@@ -65,3 +65,5 @@ export default function About() {
     </section>
   );
 }
+
+export default About;

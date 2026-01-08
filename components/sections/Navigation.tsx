@@ -30,7 +30,7 @@ export const navLinks = [
   },
 ];
 
-const Navigation = () => {
+const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 

@@ -1,4 +1,4 @@
-const Hero = () => {
+const Hero: React.FC = () => {
   // TODO fix animation delay
   return (
     <section className="relative min-h-screen flex items-center justify-center section-padding overflow-hidden pt-32">

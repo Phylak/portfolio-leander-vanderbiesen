@@ -1,0 +1,36 @@
+import { DynamicIcon } from 'lucide-react/dynamic';
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="py-8 px-6 border-t border-border">
+      <div className="text-center flex flex-col items-center gap-4">
+        <p className="text-muted-foreground text-sm font-mono">
+          Designed & Built with 💻 by{' '}
+          <span className="text-primary">Leander Vanderbiesen</span>
+        </p>
+        <div className="text-muted-foreground flex">
+          <a href="https://github.com/phylak" target="_blank" rel="noreferrer">
+            <DynamicIcon
+              name="github"
+              size={24}
+              className="mr-2  hover:text-primary hover:cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/leander-vanderbiesen-4814bb195/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <DynamicIcon
+              name="linkedin"
+              size={24}
+              className="hover:text-primary hover:cursor-pointer"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

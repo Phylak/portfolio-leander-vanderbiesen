@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
                 className="mb-4 md:mb-0 md:mr-4"
                 asChild
               >
-                <a href="mailto:contact@leandervanderbiesen@gmail.com">
+                <a href="mailto:leander.vanderbiesen@proton.me">
                   <DynamicIcon name="send" />
                   <span>Say hello</span>
                 </a>
@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
                   size={16}
                   className="mr-2 text-primary"
                 />
-                <span className="text-sm">leandervanderbiesen@gmail.com</span>
+                <span className="text-sm">leander.vanderbiesen@proton.me</span>
               </p>
               <p className="flex items-center">
                 <DynamicIcon

@@ -45,54 +45,58 @@ const Navigation: React.FC = () => {
   }, []);
 
   useEffect(() => {
-   if (!isMobileMenuOpen) return;
+    if (!isMobileMenuOpen) return;
 
     const handleOutsideClick = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
       if (!target.closest('nav')) {
         setIsMobileMenuOpen(false);
       }
-    }
+    };
 
     document.addEventListener('mousedown', handleOutsideClick);
     return () => document.removeEventListener('mousedown', handleOutsideClick);
   }, [isMobileMenuOpen]);
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glass py-4' : 'py-6'}`}
-    >
-      <div className="container-narrow flex items-center justify-between px-4 xl:px-0">
-        <div>
-          <a href="#" className="text-xl font-mono font-bold text-gradient">
-            &lt;dev /&gt;
-          </a>
-        </div>
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map(link => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium"
-            >
-              {link.text}
+    <header>
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glass py-4' : 'py-6'}`}
+      >
+        <div className="container-narrow flex items-center justify-between px-4 xl:px-0">
+          <div>
+            <a href="#" className="text-xl font-mono font-bold text-gradient">
+              &lt;dev /&gt;
             </a>
-          ))}
-          <Button variant="outline" size="sm" onClick={downloadResume}>
-            Resume
+          </div>
+          <div className="hidden md:flex items-center gap-8">
+            {navLinks.map(link => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium"
+              >
+                {link.text}
+              </a>
+            ))}
+            <Button variant="outline" size="sm" onClick={downloadResume}>
+              Resume
+            </Button>
+          </div>
+          <Button
+            variant="ghost"
+            size="lg"
+            className="md:hidden"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X /> : <Menu />}
           </Button>
+          {isMobileMenuOpen && (
+            <MobileMenu onClose={() => setIsMobileMenuOpen(false)} />
+          )}
         </div>
-        <Button
-          variant="ghost"
-          size="lg"
-          className="md:hidden"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X /> : <Menu />}
-        </Button>
-        {isMobileMenuOpen && <MobileMenu onClose={() => setIsMobileMenuOpen(false)} />}
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 

@@ -3,7 +3,7 @@ import { DynamicIcon } from 'lucide-react/dynamic';
 const Footer: React.FC = () => {
   return (
     <footer className="py-8 px-6 border-t border-border">
-      <div className="text-center flex flex-col items-center gap-4">
+      <div className="container-narrow text-center flex items-center flex-col md:flex-row justify-between gap-4">
         <p className="text-muted-foreground text-sm font-mono">
           Designed & Built with 💻 by{' '}
           <span className="text-primary">Leander Vanderbiesen</span>

@@ -29,3 +29,23 @@ export async function downloadResume() {
     console.error('Something went wrong downloading file:', e);
   }
 }
+
+export function getContributionLevel(count: number, maxCount: number): number {
+  if (count === 0) return 0;
+
+  const step = maxCount / 4;
+
+  if (count <= step) return 1;
+  if (count <= step * 2) return 2;
+  if (count <= step * 3) return 3;
+
+  return 4;
+}
+
+export const levelColors = {
+  0: 'bg-muted/30',
+  1: 'bg-primary/30',
+  2: 'bg-primary/60',
+  3: 'bg-primary/80',
+  4: 'bg-primary',
+};

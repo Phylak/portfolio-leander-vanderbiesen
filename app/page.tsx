@@ -13,7 +13,6 @@ import { Suspense } from 'react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { getContributionsByYear } from './actions/github';
 
-// TODO add supsense loading component
 export default async function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">

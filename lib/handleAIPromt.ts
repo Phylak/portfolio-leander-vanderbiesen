@@ -28,7 +28,7 @@ const handleAIPrompt = async (
   model: AIModelValue
 ): Promise<string | null> => {
   const chunks: string[] = [];
-  console.log('Model:', model);
+
   const contents = [
     {
       role: 'user',

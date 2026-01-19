@@ -52,7 +52,6 @@ const AISection: React.FC = () => {
     }
 
     setReview(response);
-    console.log('AI Response:', response);
     setIsLoading(false);
   }, [inputCode, AIModel]);
 
@@ -79,6 +78,7 @@ const AISection: React.FC = () => {
             >
               Select AI Model
             </label>
+            {/* TODO add select dropdown styling */}
             <select
               id="model-select"
               name="model-select"

@@ -25,7 +25,7 @@ const config = {
 
 const handleAIPrompt = async (
   prompt: string,
-  model: AIModelValue
+  model: string
 ): Promise<string | null> => {
   const chunks: string[] = [];
 
@@ -44,7 +44,7 @@ const handleAIPrompt = async (
     const ai = new GoogleGenAI({
       apiKey: GOOGLE_AI_API_KEY,
     });
-
+    
     const response = await ai.models.generateContentStream({
       model,
       config,

@@ -7,8 +7,6 @@ import Github from '@/components/sections/Github';
 import AISection from '@/components/sections/AI';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/sections/Footer';
-import fetchContributions from '@/lib/fetchContributions';
-import { UserContributions } from './types';
 import { Suspense } from 'react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { getContributionsByYear } from './actions/github';

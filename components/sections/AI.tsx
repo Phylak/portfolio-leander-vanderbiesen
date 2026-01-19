@@ -6,22 +6,23 @@ import { DynamicIcon } from 'lucide-react/dynamic';
 import Button from '../ui/Button';
 import { getGoogleGenAIResponse } from '@/app/actions/googleAI';
 import { AIModelValue } from '@/app/types';
+import CustomSelect from '../ui/CustomSelect';
 
 const AI_MODELS = [
-  { value: AIModelValue.GEMINI_FLASH_LATEST, label: 'Gemini Flash Latest' },
+  { value: 'gemini-flash-latest', label: 'Gemini Flash Latest' },
   {
-    value: AIModelValue.GEMINI_FLASH_LITE_LATEST,
+    value: 'gemini-flash-lite-latest',
     label: 'Gemini Flash Lite Latest',
   },
-  { value: AIModelValue.GEMINI_3_PRO_PREVIEW, label: 'Gemini 3 Pro Preview' },
+  { value: 'gemini-3-pro-preview', label: 'Gemini 3 Pro Preview' },
   {
-    value: AIModelValue.GEMINI_3_FLASH_PREVIEW,
+    value: 'gemini-3-flash-preview',
     label: 'Gemini 3 Flash Preview',
   },
-  { value: AIModelValue.GEMINI_2_5_FLASH, label: 'Gemini 2.5 Flash' },
-  { value: AIModelValue.GEMINI_2_5_PRO, label: 'Gemini 2.5 Pro' },
-  { value: AIModelValue.GEMINI_2_5_FLASH_LITE, label: 'Gemini 2.5 Flash Lite' },
-] as const;
+  { value: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash' },
+  { value: 'gemini-2.5-pro', label: 'Gemini 2.5 Pro' },
+  { value: 'gemini-2.5-flash-lite', label: 'Gemini 2.5 Flash Lite' },
+];
 
 const MAX_INPUT_LENGTH = 10000;
 
@@ -30,7 +31,7 @@ const AISection: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [review, setReview] = useState<string | null>(null);
   const [hasError, setHasError] = useState(false);
-  const [AIModel, setAIModel] = useState(AIModelValue.GEMINI_FLASH_LATEST);
+  const [AIModel, setAIModel] = useState('gemini-flash-latest');
 
   const handleReviewCode = useCallback(async () => {
     if (inputCode.length > MAX_INPUT_LENGTH) {
@@ -78,20 +79,11 @@ const AISection: React.FC = () => {
             >
               Select AI Model
             </label>
-            {/* TODO add select dropdown styling */}
-            <select
-              id="model-select"
-              name="model-select"
+            <CustomSelect
               value={AIModel}
-              onChange={e => setAIModel(e.target.value as AIModelValue)}
-              className="w-full rounded-md border border-border/50 bg-background/50 px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-            >
-              {AI_MODELS.map(model => (
-                <option key={model.value} value={model.value}>
-                  {model.label}
-                </option>
-              ))}
-            </select>
+              onValueChange={value => setAIModel(value)}
+              options={AI_MODELS}
+            />
           </div>
           <textarea
             className="flex w-full rounded-md border px-3 py-2 ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm min-h-[150px] font-mono text-sm bg-background/50 border-border/50 mb-4 resize-none"

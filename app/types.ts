@@ -23,8 +23,3 @@ type ContributionDay = {
   weekday: number;
   color: string;
 };
-
-export type AIModelValue = {
-  value: string;
-  label: string
-};

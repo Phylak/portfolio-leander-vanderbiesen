@@ -5,7 +5,6 @@ import SectionHeading from '../ui/SectionHeading';
 import { DynamicIcon } from 'lucide-react/dynamic';
 import Button from '../ui/Button';
 import { getGoogleGenAIResponse } from '@/app/actions/googleAI';
-import { AIModelValue } from '@/app/types';
 import CustomSelect from '../ui/CustomSelect';
 
 const AI_MODELS = [

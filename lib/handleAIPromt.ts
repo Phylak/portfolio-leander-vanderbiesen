@@ -1,4 +1,3 @@
-import { AIModelValue } from '@/app/types';
 import { GoogleGenAI, ThinkingLevel } from '@google/genai';
 
 const GOOGLE_AI_API_KEY = process.env.GOOGLE_AI_API_KEY!;
@@ -44,7 +43,7 @@ const handleAIPrompt = async (
     const ai = new GoogleGenAI({
       apiKey: GOOGLE_AI_API_KEY,
     });
-    
+
     const response = await ai.models.generateContentStream({
       model,
       config,

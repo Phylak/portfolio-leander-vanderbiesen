@@ -44,7 +44,12 @@ const Contact: React.FC = () => {
                   size={16}
                   className="mr-2 text-primary"
                 />
-                <span className="text-sm">leander.vanderbiesen@proton.me</span>
+                <a
+                  href="mailto:leander.vanderbiesen@proton.me"
+                  className="text-sm underline"
+                >
+                  leander.vanderbiesen@proton.me
+                </a>
               </p>
               <p className="flex items-center">
                 <DynamicIcon

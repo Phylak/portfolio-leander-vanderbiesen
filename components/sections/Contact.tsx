@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
             </p>
             <div className="flex flex-col md:flex-row mb-8">
               <Button
-                variant="default"
+                variant="hero"
                 size="xl"
                 className="mb-4 md:mb-0 md:mr-4"
                 asChild

@@ -1,14 +1,13 @@
 import SectionHeading from '../ui/SectionHeading';
-import Image from '../ui/Image';
 import { DynamicIcon } from 'lucide-react/dynamic';
 import clsx from 'clsx';
+import Image from 'next/image';
 
 const featuredProjects = [
   {
     title: 'Project One',
     description: 'A brief description of Project One.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
+    imageUrl: '/images/project-1.jpeg',
     imageAlt: 'Project One Illustration',
     technologies: ['React', 'TypeScript', 'CSS'],
     projectUrl: '#',
@@ -16,8 +15,7 @@ const featuredProjects = [
   {
     title: 'Project Two',
     description: 'A brief description of Project Two.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
+    imageUrl: '/images/project-1.jpeg',
     technologies: ['Next.js', 'Tailwind CSS', 'Node.js'],
     imageAlt: 'Project Two Illustration',
     projectUrl: '#',
@@ -25,8 +23,7 @@ const featuredProjects = [
   {
     title: 'Project Three',
     description: 'A brief description of Project Three.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
+    imageUrl: '/images/project-1.jpeg',
     technologies: ['React', 'TypeScript', 'CSS'],
     imageAlt: 'Project Three Illustration',
     projectUrl: '#',
@@ -66,14 +63,15 @@ const Projects: React.FC = () => {
               >
                 <div className="relative group">
                   <div className="relative overflow-hidden rounded-xl">
-                    {/* TODO fix gradient */}
-                    <div className="inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300 z-10">
-                      <Image
-                        src={imageUrl}
-                        alt={imageAlt}
-                        className="w-full aspect-video object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
+                    <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300 z-10" />
+                    <Image
+                      src={imageUrl}
+                      alt={imageAlt}
+                      width={665}
+                      height={375}
+                      quality={90}
+                      className="w-full aspect-video object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                    />
                   </div>
                 </div>
               </div>

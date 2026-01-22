@@ -1,12 +1,11 @@
 import SectionHeading from '@/components/ui/SectionHeading';
 import InfoCard, { InfoCardProps } from '../InfoCard';
 
-// TODO adjust copy
 const InfoCards: InfoCardProps[] = [
   {
     title: 'Full-Stack Development',
     description:
-      'Building end-to-end web applications with modern technologies',
+      'Building end-to-end web applications and cross-platform mobile apps',
     iconName: 'globe',
   },
   {
@@ -22,32 +21,28 @@ const InfoCards: InfoCardProps[] = [
   },
 ];
 
-const About: React.FC = () =>  {
+const About: React.FC = () => {
   return (
     <section className="section-padding" id="about">
       <div className="container-narrow">
         <SectionHeading count="01" title="About me" />
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            {/*TODO adjust text*/}
             <p className="text-muted-foreground leading-relaxed">
-              Hello! I'm a passionate developer who loves building things that
-              live on the internet. My interest in web development started back
-              when I discovered how code could bring ideas to life.
+              My professional journey is a blend of technical expertise and
+              unique life experiences. After serving as a Petty Officer in the
+              Belgian Navy, where I developed my discipline and problem-solving
+              skills in high-pressure environments, I transitioned into the
+              world of software development.
             </p>
             <br />
             <p className="text-muted-foreground leading-relaxed">
-              Fast-forward to today, and I've had the privilege of working on
-              various projects ranging from small business websites to complex
-              web applications. My main focus these days is building accessible,
-              inclusive products and digital experiences.
-            </p>
-            <br />
-            <p className="text-muted-foreground leading-relaxed">
-              I'm particularly excited about the intersection of traditional web
-              development and artificial intelligence. I believe AI can enhance
-              user experiences in meaningful ways, and I'm constantly exploring
-              new ways to integrate these technologies.
+              Today, I leverage a full-stack mindset to deliver high-quality
+              solutions, having worked with major organizations such as Brussels
+              Airport, the Belgian government, and Eneco. I am passionate about
+              writing clean, robust code, building fast and responsive user
+              interfaces, bridging backend and frontend development, and staying
+              at the forefront of modern tools and architectures.
             </p>
           </div>
           <div>
@@ -64,6 +59,6 @@ const About: React.FC = () =>  {
       </div>
     </section>
   );
-}
+};
 
 export default About;

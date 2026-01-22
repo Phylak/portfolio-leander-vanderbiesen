@@ -49,7 +49,7 @@ const Github: React.FC<Props> = ({ userContributionsCollection }) => {
               />
               Contribution graph
             </h3>
-            <p className="text-xs text-muted-foreground font-mono">
+            <p className="text-right md:text-left text-xs text-muted-foreground font-mono">
               Total contributions:{' '}
               <span className="text-primary">
                 {contributions.contributionCalendar.totalContributions}

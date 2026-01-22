@@ -29,12 +29,14 @@ const Hero: React.FC = () => {
             className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-9 animate-fade-up mb-8 lg:mb-12"
             style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}
           >
-            I'm a full-stack developer specializing in building exceptional
-            digital experiences. Currently focused on creating accessible,
-            human-centered products with{' '}
-            <span className="text-gradient font-semibold">Node.js</span> and{' '}
-            <span className="text-gradient font-semibold">AI integrations</span>
-            .
+            I am a dedicated Front-end Developer based in Zürich with over 5
+            years of experience in the tech industry. I specialize in building
+            robust, scalable web and mobile applications using{' '}
+            <span className="text-gradient font-semibold">React</span>,{' '}
+            <span className="text-gradient font-semibold">TypeScript</span>, and{' '}
+            <span className="text-gradient font-semibold">Node.js</span>. My
+            goal is to bridge the gap between complex backend logic and
+            intuitive, high-performance user interfaces.
           </p>
         </div>
         <div

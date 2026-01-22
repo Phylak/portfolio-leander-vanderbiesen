@@ -17,9 +17,8 @@ const Contact: React.FC = () => {
               Get in touch
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg mx-auto">
-              I'm currently open to new opportunities and always excited to
-              discuss interesting projects. Whether you have a question, a
-              project idea, or just want to say hi, my inbox is always open!
+              I am actively seeking new job opportunities and always excited to discuss interesting projects.
+               Whether you have a role in mind, a project idea, or just want to say hi, my inbox is always open!
             </p>
             <div className="flex flex-col md:flex-row mb-8">
               <Button
@@ -57,7 +56,7 @@ const Contact: React.FC = () => {
                   size={16}
                   className="mr-2 text-primary"
                 />
-                <span className="text-sm">Zurich, Switzerland</span>
+                <span className="text-sm">Zürich, Switzerland</span>
               </p>
             </div>
           </div>

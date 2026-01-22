@@ -3,30 +3,55 @@ import { DynamicIcon } from 'lucide-react/dynamic';
 import clsx from 'clsx';
 import Image from 'next/image';
 
+//TODO update skills
 const featuredProjects = [
   {
-    title: 'Project One',
-    description: 'A brief description of Project One.',
+    title: 'Brussels Airport App',
+    description:
+      'Developed a React Native mobile app, integrating Storyblok GraphQL API for dynamic content management. Implemented custom React hooks and filters with React Query for efficient flight and content search.',
     imageUrl: '/images/project-1.jpeg',
     imageAlt: 'Project One Illustration',
-    technologies: ['React', 'TypeScript', 'CSS'],
-    projectUrl: '#',
+    technologies: ['React Native', 'TypeScript', 'Next.js'],
+    projectUrl:
+      'https://play.google.com/store/apps/details?id=be.brusselsairport.appyflight',
   },
   {
-    title: 'Project Two',
-    description: 'A brief description of Project Two.',
+    title: 'Eneco Smart Meter App',
+    description:
+      'Built a React app bundled with Capacitorjs to support energy transition, featuring real-time graphs for energy consumption and smart charging capabilities for electric vehicle users with home charging stations.',
     imageUrl: '/images/project-1.jpeg',
     technologies: ['Next.js', 'Tailwind CSS', 'Node.js'],
     imageAlt: 'Project Two Illustration',
-    projectUrl: '#',
+    projectUrl:
+      'https://play.google.com/store/apps/details?id=com.enecogroup.apps.be.eneco.insights',
   },
   {
-    title: 'Project Three',
-    description: 'A brief description of Project Three.',
+    title: 'FAAM (Digital Museum of Flanders)',
+    description:
+      'Developed a React Native mobile application for the Digital Museum of Flanders, enabling users to explore cultural exhibits interactively. Built a custom component to integrate the Google Maps API. Optimized a script to convert SVG files to JSON.',
     imageUrl: '/images/project-1.jpeg',
     technologies: ['React', 'TypeScript', 'CSS'],
     imageAlt: 'Project Three Illustration',
-    projectUrl: '#',
+    projectUrl:
+      'https://play.google.com/store/apps/details?id=vlaanderen.faam.app',
+  },
+  {
+    title: 'iO digital company website',
+    description:
+      'Contributed to the development of iO’s large-scale corporate website, a React-based application built in a Next.js environment with Storyblok headless CMS.',
+    imageUrl: '/images/project-1.jpeg',
+    technologies: ['React', 'TypeScript', 'CSS'],
+    imageAlt: 'Project Three Illustration',
+    projectUrl: 'https://www.iodigital.com/',
+  },
+  {
+    title: 'Hermanos Tattoos (Hobby Project)',
+    description:
+      'Developed a responsive website using React and Tailwind CSS, showcasing a local tattoo studio’s portfolio. Shipped with Vercel.',
+    imageUrl: '/images/project-1.jpeg',
+    technologies: ['React', 'TypeScript', 'CSS'],
+    imageAlt: 'Project Three Illustration',
+    projectUrl: 'https://hermanostattoos.be/',
   },
 ];
 
@@ -97,6 +122,8 @@ const Projects: React.FC = () => {
                 </div>
                 <a
                   href={projectUrl}
+                  target="_blank"
+                  rel="noreferrer"
                   className={clsx(
                     'text-foreground hover:text-primary transition-colors flex',
                     index % 2 === 0 ? 'lg:justify-end' : ''

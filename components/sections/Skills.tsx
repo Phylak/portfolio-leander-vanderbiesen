@@ -1,30 +1,59 @@
 import SectionHeading from '../ui/SectionHeading';
 
-// TODO: adjust skills
 const SkillsArray = [
   {
     title: 'Frontend',
     skills: [
       'React',
-      'Next.js',
-      'Vue.js',
-      'HTML',
-      'CSS',
-      'JavaScript',
       'TypeScript',
+      'JavaScript (ES6+)',
+      'Next.js',
+      'React Native',
+      'HTML5',
+      'Tailwind CSS',
     ],
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'Express', 'Django', 'Flask', 'GraphQL', 'REST APIs'],
+    skills: [
+      'Node.js',
+      'REST APIs',
+      'GraphQL',
+      'MySQL',
+      'Basic PHP - Symfony/Laravel',
+    ],
   },
   {
     title: 'Devops & Tools',
-    skills: ['Git', 'Github Actions'],
+    skills: [
+      'Git',
+      'GitHub Actions',
+      'Postman',
+      'Google Cloud',
+      'Google Lighthouse',
+      'Google Firebase',
+      'Algolia Search',
+      'Capacitor.js',
+      'GitLab CI',
+      'Storybook',
+      'Xcode & Android Studio',
+      'Vercel',
+      'AI Tools',
+    ],
   },
   {
-    title: 'APIs & Databases',
-    skills: ['GraphQL', 'SQL', 'Firebase', 'Supabase', 'Third-party APIs'],
+    title: 'CMS & Analytics',
+    skills: [
+      'Storyblok',
+      'Google Analytics',
+      'Google Tag Manager',
+      'HubSpot',
+      'Sitecore',
+    ],
+  },
+  {
+    title: 'Testing & Methodologies',
+    skills: ['Jest Testing Library', 'Scrum & Agile'],
   },
 ];
 

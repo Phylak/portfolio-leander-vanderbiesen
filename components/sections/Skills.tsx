@@ -37,6 +37,7 @@ const SkillsArray = [
       'GitLab CI',
       'Storybook',
       'Xcode & Android Studio',
+      'iOS & Android Deployment',
       'Vercel',
       'AI Tools',
     ],

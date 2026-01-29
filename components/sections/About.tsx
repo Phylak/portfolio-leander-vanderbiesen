@@ -9,15 +9,22 @@ const InfoCards: InfoCardProps[] = [
     iconName: 'globe',
   },
   {
-    title: 'API Development',
-    description: 'Designing robust RESTful APIs and integrations with Node.js',
-    iconName: 'code-2',
+    title: 'Headless CMS Solutions',
+    description:
+      'Integrating modern CMS platforms like Storyblok and Sitecore for dynamic content management',
+    iconName: 'database',
   },
   {
-    title: 'AI Integration',
+    title: 'Performance Optimization',
     description:
-      'Implementing intelligent features using cutting-edge AI models',
-    iconName: 'cpu',
+      'Creating fast, accessible, and responsive user interfaces with modern React patterns',
+    iconName: 'zap',
+  },
+  {
+    title: 'Mobile Development',
+    description:
+      'Shipping cross-platform apps with React Native, Capacitor.js and Expo for iOS and Android',
+    iconName: 'smartphone',
   },
 ];
 

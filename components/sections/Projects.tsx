@@ -3,44 +3,70 @@ import { DynamicIcon } from 'lucide-react/dynamic';
 import clsx from 'clsx';
 import Image from 'next/image';
 
-//TODO update skills
 const featuredProjects = [
   {
     title: 'Brussels Airport App',
     description:
-      'Developed a React Native mobile app, integrating Storyblok GraphQL API for dynamic content management. Implemented custom React hooks and filters with React Query for efficient flight and content search.',
-    imageUrl: '/images/project-1.jpeg',
-    imageAlt: 'Project One Illustration',
-    technologies: ['React Native', 'TypeScript', 'Next.js'],
+      'Contributed to the development of a React Native mobile app, integrating Storyblok GraphQL API for dynamic content management. Implemented custom React hooks and filters with React Query for efficient flight and content search.',
+    imageUrl: '/images/brussels-airport.webp',
+    imageAlt: 'Brussels Airport App Illustration',
+    downloads: '100k+',
+    rating: '4.6/5',
+    technologies: [
+      'React Native',
+      'TypeScript',
+      'Next.js',
+      'Expo',
+      'Tailwind CSS',
+      'GraphQL',
+      'Storyblok',
+    ],
     projectUrl:
       'https://play.google.com/store/apps/details?id=be.brusselsairport.appyflight',
   },
   {
-    title: 'Eneco Smart Meter App',
-    description:
-      'Built a React app bundled with Capacitorjs to support energy transition, featuring real-time graphs for energy consumption and smart charging capabilities for electric vehicle users with home charging stations.',
-    imageUrl: '/images/project-1.jpeg',
-    technologies: ['Next.js', 'Tailwind CSS', 'Node.js'],
-    imageAlt: 'Project Two Illustration',
-    projectUrl:
-      'https://play.google.com/store/apps/details?id=com.enecogroup.apps.be.eneco.insights',
-  },
-  {
     title: 'FAAM (Digital Museum of Flanders)',
     description:
-      'Developed a React Native mobile application for the Digital Museum of Flanders, enabling users to explore cultural exhibits interactively. Built a custom component to integrate the Google Maps API. Optimized a script to convert SVG files to JSON.',
-    imageUrl: '/images/project-1.jpeg',
-    technologies: ['React', 'TypeScript', 'CSS'],
-    imageAlt: 'Project Three Illustration',
+      'Contributed to the development of a React Native mobile application for the Digital Museum of Flanders, enabling users to explore cultural exhibits interactively. Built a custom component to integrate the Google Maps API, created several responsive componenents and optimized a script to convert SVG files to JSON.',
+    imageUrl: '/images/faam-app.webp',
+    imageAlt: 'FAAM app Illustration',
+    technologies: [
+      'React Native',
+      'TypeScript',
+      'Tailwind CSS',
+      'Expo',
+      'Google Maps API',
+    ],
+    downloads: '2k+',
+    rating: '4/5',
     projectUrl:
       'https://play.google.com/store/apps/details?id=vlaanderen.faam.app',
+  },
+  {
+    title: 'Eneco Smart Meter App',
+    description:
+      'Contributed to the development of a React app bundled with Capacitorjs to support energy transition, featuring real-time graphs for energy consumption and smart charging capabilities for electric vehicle users with home charging stations.',
+    imageUrl: '/images/eneco-smart-meter-app.webp',
+    imageAlt: 'Eneoc App Illustration',
+    downloads: '100k+',
+    rating: '2.1/5',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Capacitorjs', 'Nx'],
+    projectUrl:
+      'https://play.google.com/store/apps/details?id=com.enecogroup.apps.be.eneco.insights',
   },
   {
     title: 'iO digital company website',
     description:
       'Contributed to the development of iO’s large-scale corporate website, a React-based application built in a Next.js environment with Storyblok headless CMS.',
-    imageUrl: '/images/project-1.jpeg',
-    technologies: ['React', 'TypeScript', 'CSS'],
+    imageUrl: '/images/iodigital.webp',
+    technologies: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Next.js',
+      'Storyblok',
+      'Algolia search',
+    ],
     imageAlt: 'Project Three Illustration',
     projectUrl: 'https://www.iodigital.com/',
   },
@@ -48,9 +74,9 @@ const featuredProjects = [
     title: 'Hermanos Tattoos (Hobby Project)',
     description:
       'Developed a responsive website using React and Tailwind CSS, showcasing a local tattoo studio’s portfolio. Shipped with Vercel.',
-    imageUrl: '/images/project-1.jpeg',
-    technologies: ['React', 'TypeScript', 'CSS'],
-    imageAlt: 'Project Three Illustration',
+    imageUrl: '/images/hermanostattoos.webp',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Resend', 'Imagekit'],
+    imageAlt: 'Hermanos Tattoos Illustration',
     projectUrl: 'https://hermanostattoos.be/',
   },
 ];
@@ -67,6 +93,8 @@ const Projects: React.FC = () => {
               description,
               imageUrl,
               imageAlt,
+              downloads,
+              rating,
               technologies,
               projectUrl,
             },
@@ -110,9 +138,30 @@ const Projects: React.FC = () => {
                     {description}
                   </p>
                 </div>
+                {/* TODO not sure if I want to show this info */}
+                {/* {downloads && rating && (
+                  <div
+                    className={clsx(
+                      'flex flex-col lg:items-center gap-2 mb-4',
+                      index % 2 === 0 ? 'lg:items-end' : 'lg:items-start'
+                    )}
+                  >
+                    <span className="text-muted-foreground text-sm">
+                      Downloads: {downloads}
+                    </span>
+                    <span className="text-muted-foreground text-sm flex items-center">
+                      Rating: {rating}{' '}
+                      <DynamicIcon
+                        name="star"
+                        size={14}
+                        className="ml-1 text-primary"
+                      />
+                    </span>
+                  </div>
+                )} */}
                 <div
                   className={clsx(
-                    'flex flex-wrap gap-3 mb-4 font-mono text-xs text-muted-foreground ',
+                    'flex flex-wrap gap-3 mb-4 font-mono text-xs text-muted-foreground',
                     index % 2 === 0 ? 'lg:justify-end' : ''
                   )}
                 >

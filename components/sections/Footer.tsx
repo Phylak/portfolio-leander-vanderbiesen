@@ -14,12 +14,14 @@ const Footer: React.FC = () => {
               name="github"
               size={24}
               className="mr-2  hover:text-primary hover:cursor-pointer"
+              aria-label='Visit my Github page'
             />
           </a>
           <a
             href="https://www.linkedin.com/in/leander-vanderbiesen-4814bb195/"
             target="_blank"
             rel="noreferrer"
+            aria-label='Visit my LinkedIn profile'
           >
             <DynamicIcon
               name="linkedin"

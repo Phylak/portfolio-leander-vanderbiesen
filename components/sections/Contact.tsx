@@ -26,13 +26,14 @@ const Contact: React.FC = () => {
                 size="xl"
                 className="mb-4 md:mb-0 md:mr-4"
                 asChild
+                aria-label='Contact me'
               >
                 <a href="mailto:leander.vanderbiesen@proton.me">
                   <DynamicIcon name="send" />
                   <span>Say hello</span>
                 </a>
               </Button>
-              <Button variant="glass" size="xl" onClick={downloadResume}>
+              <Button variant="glass" size="xl" onClick={downloadResume} aria-label='Download resume'>
                 Download resume
               </Button>
             </div>

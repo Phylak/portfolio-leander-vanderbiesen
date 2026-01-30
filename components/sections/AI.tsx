@@ -98,6 +98,7 @@ const AISection: React.FC = () => {
             className="mb-4"
             onClick={handleReviewCode}
             disabled={isLoading || inputCode.trim() === ''}
+            aria-label="Review Code"
           >
             {isLoading ? (
               <>

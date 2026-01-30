@@ -43,10 +43,10 @@ const Hero: React.FC = () => {
           className="flex flex-wrap gap-4 mb-12 animate-fade-up opacity-0"
           style={{ animationDelay: '500ms', animationFillMode: 'forwards' }}
         >
-          <Button variant="hero" size="lg" className="animate-fade-up" asChild>
+          <Button variant="hero" size="lg" className="animate-fade-up" asChild aria-label='View my work'>
             <a href="#projects">View my work</a>
           </Button>
-          <Button variant="glass" size="lg" asChild>
+          <Button variant="glass" size="lg" asChild aria-label='Get in touch'>
             <a href="#contact">Get in touch</a>
           </Button>
         </div>

@@ -79,7 +79,7 @@ const Navigation: React.FC = () => {
                 {link.text}
               </a>
             ))}
-            <Button variant="outline" size="sm" onClick={downloadResume}>
+            <Button variant="outline" size="sm" onClick={downloadResume} aria-label='Download resume'>
               Resume
             </Button>
           </div>
@@ -88,6 +88,7 @@ const Navigation: React.FC = () => {
             size="lg"
             className="md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
           >
             {isMobileMenuOpen ? <X /> : <Menu />}
           </Button>

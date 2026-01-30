@@ -67,6 +67,7 @@ const Github: React.FC<Props> = ({ userContributionsCollection }) => {
                     onClick={async () => await updateContributions(year)}
                     variant={activeYear === year ? 'default' : 'outline'}
                     size={useWindowSize().width! < 768 ? 'sm' : 'default'}
+                    aria-label={`View contributions for year ${year}`}
                   >
                     {year}
                   </Button>

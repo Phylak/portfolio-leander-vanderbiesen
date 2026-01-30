@@ -177,6 +177,7 @@ const Projects: React.FC = () => {
                     'text-foreground hover:text-primary transition-colors flex',
                     index % 2 === 0 ? 'lg:justify-end' : ''
                   )}
+                  aria-label='Open external link'
                 >
                   <DynamicIcon name="external-link" size={20} />
                 </a>

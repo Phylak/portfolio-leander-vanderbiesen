@@ -86,6 +86,7 @@ const AISection: React.FC = () => {
             />
           </div>
           <textarea
+            id="code-input"
             className="flex w-full rounded-md border px-3 py-2 ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm min-h-[150px] font-mono text-sm bg-background/50 border-border/50 mb-4 resize-none"
             placeholder="// Paste your code here...
             function example() {

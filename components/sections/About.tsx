@@ -54,7 +54,6 @@ const About: React.FC = () => {
               at the forefront of modern tools and architectures.
             </p>
             <br />
-            {/* TODO fix this ul */}
             <p className="text-muted-foreground leading-relaxed">
               I specialize in building fast, accessible, and responsive
               applications using React, TypeScript, and Node.js. My expertise

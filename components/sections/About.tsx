@@ -28,6 +28,8 @@ const InfoCards: InfoCardProps[] = [
   },
 ];
 
+const styledListItem = `relative pl-6 text-muted-foreground before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:transition-all before:duration-300 hover:before:scale-125 before:bg-primary before:shadow-[0_0_8px_hsl(var(--primary)/0.5)]`;
+
 const About: React.FC = () => {
   return (
     <section className="section-padding" id="about">
@@ -51,6 +53,42 @@ const About: React.FC = () => {
               interfaces, bridging backend and frontend development, and staying
               at the forefront of modern tools and architectures.
             </p>
+            <br />
+            {/* TODO fix this ul */}
+            <p className="text-muted-foreground leading-relaxed">
+              I specialize in building fast, accessible, and responsive
+              applications using React, TypeScript, and Node.js. My expertise
+              extends to:
+            </p>
+            <br />
+            <ul className="space-y-3">
+              <li className={styledListItem}>
+                <span>
+                  <span className="text-primary">Modern CMS Integrations</span>:
+                  Streamlining content management through Storyblok, Sitecore
+                  within Next.js environments.
+                </span>
+              </li>
+              <li className={styledListItem}>
+                <span>
+                  <span className="text-primary">
+                    Complex Technical Solutions
+                  </span>
+                  : Integrating REST APIs and GraphQL, developing custom React
+                  hooks, and managing complex application states using the React
+                  Context API.
+                </span>
+              </li>
+              <li className={styledListItem}>
+                <span>
+                  <span className="text-primary">
+                    Cross-Platform Development
+                  </span>
+                  : Building and shipping mobile apps using React Native and
+                  Capacitorjs.
+                </span>
+              </li>
+            </ul>
           </div>
           <div>
             {InfoCards.map(({ title, description, iconName }) => (

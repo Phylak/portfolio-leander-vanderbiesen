@@ -10,16 +10,18 @@ interface CustomSelectProps {
   value: string;
   onValueChange: (value: string) => void;
   options: OptionValue[];
+  id?: string;
 }
 
 const CustomSelect: React.FC<CustomSelectProps> = ({
   value,
   onValueChange,
   options,
+  id,
 }) => {
   return (
     <Select.Root value={value} onValueChange={onValueChange}>
-      <Select.Trigger className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2" aria-label='Select the AI model'>
+      <Select.Trigger id={id} className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2" aria-label='Select the AI model'>
         <Select.Value />
         <Select.Icon asChild>
           <ChevronDown className="h-4 w-4 opacity-50" />

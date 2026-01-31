@@ -82,6 +82,7 @@ const AISection: React.FC = () => {
               value={AIModel}
               onValueChange={value => setAIModel(value)}
               options={AI_MODELS}
+              id="model-select"
             />
           </div>
           <textarea

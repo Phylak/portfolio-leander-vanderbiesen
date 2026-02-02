@@ -4,9 +4,9 @@ import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
-  title: 'Leander Vanderbiesen | Frontend Developer in Zürich',
+  title: 'Leander Vanderbiesen | Full-Stack Developer in Zürich',
   description:
-    'Frontend Developer in Zürich specializing in React, TypeScript, and React Native. 5+ years building scalable web and mobile apps for Brussels Airport, Eneco, and more.',
+    'Full-Stack Developer in Zürich specializing in React, TypeScript, and React Native. 5+ years building scalable web and mobile apps for Brussels Airport, Eneco, and more.',
   icons: {
     icon: [
       { url: '/favicon-16x16.ico', sizes: '16x16', type: 'image/ico' },

@@ -56,10 +56,9 @@ const About: React.FC = () => {
             <br />
             <p className="text-muted-foreground leading-relaxed">
               I specialize in building fast, accessible, and responsive
-              applications using React, TypeScript, and Node.js. My expertise
-              extends to:
+              applications using React, TypeScript, and Node.js.
             </p>
-            <br />
+            {/* <br />
             <ul className="space-y-3">
               <li className={styledListItem}>
                 <span>
@@ -87,7 +86,7 @@ const About: React.FC = () => {
                   Capacitorjs.
                 </span>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div>
             {InfoCards.map(({ title, description, iconName }) => (

@@ -3,7 +3,7 @@ import InfoCard, { InfoCardProps } from '../InfoCard';
 
 const InfoCards: InfoCardProps[] = [
   {
-    title: 'Full-Stack Development',
+    title: 'Front-end Development',
     description:
       'Building end-to-end web applications and cross-platform mobile apps',
     iconName: 'globe',
@@ -46,7 +46,7 @@ const About: React.FC = () => {
             </p>
             <br />
             <p className="text-muted-foreground leading-relaxed">
-              Today, I leverage a full-stack mindset to deliver high-quality
+              Today, I leverage a Front-end-stack mindset to deliver high-quality
               solutions, having worked with major organizations such as Brussels
               Airport, the Belgian government, and Eneco. I am passionate about
               writing clean, robust code, building fast and responsive user

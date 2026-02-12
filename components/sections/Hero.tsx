@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
             className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-9 animate-fade-up mb-8 lg:mb-12"
             style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}
           >
-            I am a dedicated Full-Stack Developer based in Zürich with over 5
+            I am a dedicated Front-end Developer based in Zürich with over 5
             years of experience in the tech industry. I specialize in building
             robust, scalable web and mobile applications using{' '}
             <span className="text-gradient font-semibold">React</span>,{' '}

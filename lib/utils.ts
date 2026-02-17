@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export async function downloadResume() {
   try {
-    const response = await fetch('/CV_Leander_Vanderbiesen.pdf');
+    const response = await fetch('/CV-Leander-Vanderbiesen.pdf');
 
     if (!response.ok) {
       throw new Error('Download failed');
@@ -19,7 +19,7 @@ export async function downloadResume() {
 
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'CV_leander_vanderbiesen.pdf';
+    a.download = 'CV-Leander-Vanderbiesen.pdf';
     document.body.appendChild(a);
     a.click();
 

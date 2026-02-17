@@ -29,24 +29,31 @@ const Hero: React.FC = () => {
             className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-9 animate-fade-up mb-8 lg:mb-12"
             style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}
           >
-            I am a dedicated Front-end Developer based in Zürich with over 5
-            years of experience in the tech industry. I specialize in building
-            robust, scalable web and mobile applications using{' '}
+            I am a dedicated Front-end developer living in Zürich with 5+ years
+            crafting scalable web and mobile apps. Specializing in{' '}
             <span className="text-gradient font-semibold">React</span>,{' '}
             <span className="text-gradient font-semibold">TypeScript</span>, and{' '}
-            <span className="text-gradient font-semibold">Node.js</span>. My
-            goal is to bridge the gap between complex backend logic and
-            intuitive, high-performance user interfaces.
+            <span className="text-gradient font-semibold">Node.js</span>. I've
+            delivered solutions for clients like Brussels Airport, Eneco, and
+            the Belgian Government. Passionate about seamless UI/UX, API
+            integrations, and agile teamwork, I'm a native Dutch speaker fluent
+            in English. Let's build something innovative together.
           </p>
         </div>
         <div
           className="flex flex-wrap gap-4 mb-12 animate-fade-up opacity-0"
           style={{ animationDelay: '500ms', animationFillMode: 'forwards' }}
         >
-          <Button variant="hero" size="lg" className="animate-fade-up" asChild aria-label='View my work'>
+          <Button
+            variant="hero"
+            size="lg"
+            className="animate-fade-up"
+            asChild
+            aria-label="View my work"
+          >
             <a href="#projects">View my work</a>
           </Button>
-          <Button variant="glass" size="lg" asChild aria-label='Get in touch'>
+          <Button variant="glass" size="lg" asChild aria-label="Get in touch">
             <a href="#contact">Get in touch</a>
           </Button>
         </div>

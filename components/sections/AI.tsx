@@ -8,12 +8,11 @@ import { getGoogleGenAIResponse } from '@/app/actions/googleAI';
 import CustomSelect from '../ui/CustomSelect';
 
 const AI_MODELS = [
-  { value: 'gemini-flash-latest', label: 'Gemini Flash Latest' },
+  { value: 'gemini-3.1-pro-preview', label: 'Gemini 3.1 Pro Preview' },
   {
     value: 'gemini-flash-lite-latest',
     label: 'Gemini Flash Lite Latest',
   },
-  { value: 'gemini-3-pro-preview', label: 'Gemini 3 Pro Preview' },
   {
     value: 'gemini-3-flash-preview',
     label: 'Gemini 3 Flash Preview',
@@ -30,7 +29,7 @@ const AISection: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [review, setReview] = useState<string | null>(null);
   const [hasError, setHasError] = useState(false);
-  const [AIModel, setAIModel] = useState('gemini-flash-latest');
+  const [AIModel, setAIModel] = useState('gemini-3.1-pro-preview');
 
   const handleReviewCode = useCallback(async () => {
     if (inputCode.length > MAX_INPUT_LENGTH) {

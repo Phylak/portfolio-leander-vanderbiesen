@@ -28,9 +28,8 @@ const InfoCards: InfoCardProps[] = [
   },
 ];
 
-const styledListItem = `relative pl-6 text-muted-foreground before:absolute before:left-0 before:top-[0.6em] before:h-1.5 before:w-1.5 before:rounded-full before:transition-all before:duration-300 hover:before:scale-125 before:bg-primary before:shadow-[0_0_8px_hsl(var(--primary)/0.5)]`;
-
 const About: React.FC = () => {
+
   return (
     <section className="section-padding" id="about">
       <div className="container-narrow">

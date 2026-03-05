@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
         <div className="max-w-2xl mx-auto text-center">
           <div className="flex flex-col items-center text-center">
             <p className="text-mono text-primary text-sm mb-4">
-              06. What's next?
+              06. What&apos;s next?
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Get in touch

@@ -93,8 +93,6 @@ const Projects: React.FC = () => {
               description,
               imageUrl,
               imageAlt,
-              downloads,
-              rating,
               technologies,
               projectUrl,
             },

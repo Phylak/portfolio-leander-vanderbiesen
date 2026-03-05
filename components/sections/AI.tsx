@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import SectionHeading from '../ui/SectionHeading';
 import { DynamicIcon } from 'lucide-react/dynamic';
 import Button from '../ui/Button';

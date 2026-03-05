@@ -2,7 +2,7 @@
 
 import { contributionsCollection } from '@/app/types';
 import SectionHeading from '../ui/SectionHeading';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import Button from '../ui/Button';
 import { getContributionsByYear } from '@/app/actions/github';
 import { DynamicIcon } from 'lucide-react/dynamic';
@@ -23,6 +23,8 @@ const Github: React.FC<Props> = ({ userContributionsCollection }) => {
   const [activeYear, setActiveYear] = useState<number>(
     new Date().getFullYear()
   );
+  const { width } = useWindowSize();
+  const isMobile = width! < 768;
 
   const updateContributions = useCallback(async (year: number) => {
     const data = await getContributionsByYear(year);
@@ -66,7 +68,7 @@ const Github: React.FC<Props> = ({ userContributionsCollection }) => {
                   <Button
                     onClick={async () => await updateContributions(year)}
                     variant={activeYear === year ? 'default' : 'outline'}
-                    size={useWindowSize().width! < 768 ? 'sm' : 'default'}
+                    size={isMobile ? 'sm' : 'default'}
                     aria-label={`View contributions for year ${year}`}
                   >
                     {year}

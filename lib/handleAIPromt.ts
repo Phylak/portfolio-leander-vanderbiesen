@@ -1,4 +1,4 @@
-import { GoogleGenAI, ThinkingLevel } from '@google/genai';
+import { GoogleGenAI } from '@google/genai';
 
 const GOOGLE_AI_API_KEY = process.env.GOOGLE_AI_API_KEY!;
 

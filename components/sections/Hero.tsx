@@ -33,11 +33,11 @@ const Hero: React.FC = () => {
             crafting scalable web and mobile apps. Specializing in{' '}
             <span className="text-gradient font-semibold">React</span>,{' '}
             <span className="text-gradient font-semibold">TypeScript</span>, and{' '}
-            <span className="text-gradient font-semibold">Node.js</span>. I've
+            <span className="text-gradient font-semibold">Node.js</span>. I&apos;ve
             delivered solutions for clients like Brussels Airport, Eneco, and
             the Belgian Government. Passionate about seamless UI/UX, API
-            integrations, and agile teamwork, I'm a native Dutch speaker fluent
-            in English. Let's build something innovative together.
+            integrations, and agile teamwork, I&apos;m a native Dutch speaker fluent
+            in English. Let&apos;s build something innovative together.
           </p>
         </div>
         <div
